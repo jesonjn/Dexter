@@ -16,10 +16,12 @@
 #-keepclassmembers class fqcn.of.javascript.interface.for.webview {
 #   public *;
 #}
-
+#proguard
 
 # This is a configuration file for ProGuard.
 # http://proguard.sourceforge.net/index.html#manual/usage.html
+
+-ignorewarnings
 -dontwarn com.**
 -dontusemixedcaseclassnames
 -dontskipnonpubliclibraryclasses
