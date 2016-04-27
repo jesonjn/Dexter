@@ -24,4 +24,35 @@ dependencies {
   testCompile 'junit:junit:4.12'
   testCompile 'org.mockito:mockito-core:1.9.5'
   compile 'com.android.support:appcompat-v7:23.2.0'
+
+  compile fileTree(include: ['*.jar'], dir: 'libs')
+  compile files('libs/nineoldandroids-2.4.0.jar')
+  //动画兼容
+  compile files('libs/gson-2.5.jar')
+  //JSON 解析
+  compile files('libs/okhttp-3.0.1.jar')
+  //联网
+  compile files('libs/okio-1.6.0.jar')
+  //联网
+  compile files('libs/rxjava-1.1.1-SNAPSHOT.jar')
+  compile files('libs/rxjava_android.jar')
+  compile files('libs/hawk.jar')
+  //数据库
+  compile files('libs/butterknife-7.0.1.jar')
+  //findviewByid
+  compile files('libs/zxing.jar')
+  // 二维码
+  compile files('libs/locSDK_6.13.jar')
+  //百度定位
+  compile files('libs/glide-okhttp3-integration-1.4.0.jar')
+  //图片加载
+  compile files('libs/glide-3.7.0.jar')
+  //图片加载
+  compile files('libs/anr-watchdog-1.2.0.jar')
+  //Anr监控
+  compile 'com.android.support:appcompat-v7:23.2.0'
+  // testCompile 'junit:junit:4.12'//测试
+  compile 'com.android.support:recyclerview-v7:23.2.0'
+  compile 'com.android.support:cardview-v7:23.2.0'
+
 }

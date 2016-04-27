@@ -42,6 +42,5 @@ android {
 dependencies {
   compile fileTree(include: ['*.jar'], dir: 'libs')
   compile 'com.android.support:appcompat-v7:23.1.1'
-  compile files('libs/butterknife-7.0.1.jar')
-  compile project(':dexter')
+   compile project(':dexter')
 }
