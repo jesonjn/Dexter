@@ -1,7 +1,7 @@
 
 this project if fork from  
 
-!()[https://github.com/Karumi/Dexter]
+![https://github.com/Karumi/Dexter]
 
 and this is a demo for android proguard 
 
