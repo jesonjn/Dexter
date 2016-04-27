@@ -6,21 +6,42 @@ android {
 
   defaultConfig {
     applicationId "com.karumi.dexter.sample"
-    minSdkVersion 14
+    minSdkVersion 8
     targetSdkVersion 23
     versionCode 1
     versionName "1.0"
   }
+
+
+
+
   buildTypes {
     release {
-      minifyEnabled false
+      minifyEnabled true
+      proguardFiles  getDefaultProguardFile('proguard-android.txt'),'proguard-rules.pro'
     }
   }
+
+  packagingOptions {
+
+
+    exclude 'META-INF/DEPENDENCIES.txt'
+    exclude 'META-INF/LICENSE.txt'
+    exclude 'META-INF/NOTICE.txt'
+    exclude 'META-INF/NOTICE'
+    exclude 'META-INF/LICENSE'
+    exclude 'META-INF/DEPENDENCIES'
+    exclude 'META-INF/notice.txt'
+    exclude 'META-INF/license.txt'
+    exclude 'META-INF/dependencies.txt'
+    exclude 'META-INF/LGPL2.1'
+  }
+
 }
 
 dependencies {
   compile fileTree(include: ['*.jar'], dir: 'libs')
   compile 'com.android.support:appcompat-v7:23.1.1'
-  compile 'com.jakewharton:butterknife:7.0.1'
+  compile files('libs/butterknife-7.0.1.jar')
   compile project(':dexter')
 }
